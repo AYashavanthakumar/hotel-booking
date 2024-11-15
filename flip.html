@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header class="header">
+    <h1>Hotel Booking</h1>
+</header>
+  <main class="main">
+    <section class="booking-form">
+      <h2>Book Your Stay</h2>
+      <form id="bookingForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="room">Room Type</label>
+        <select id="room" name="room" required>
+          <option value="single">Single Room</option>
+          <option value="double">Double Room</option>
+          <option value="suite">Suite</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+    <div id="confirmationMessage" class="hidden">
+      <p>Thank you for booking with us! Your booking has been confirmed.</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 Hotel Booking. All rights reserved.</p>
+  </footer>
+  <script src="hotel.js"></script>
+</body>
+</html>
